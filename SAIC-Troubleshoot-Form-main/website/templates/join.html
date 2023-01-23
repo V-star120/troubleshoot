@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <div class="container">
+    <div class="title">Register Here!</div>
+    <div class="content">
+      <form method="POST" action="{% url 'join' %}">
+        {% csrf_token %}
+
+        <span class="heading">Team Details</span>
+        <div class="user-details">
+          <div class="input-box starlabel">
+            <span class="details ">Team Name</span>
+            <input type="text" name="tname" placeholder="Enter your team name" required>
+          </div>
+
+        </div>
+        <hr>
+        <span class="heading">Team Leader Details</span>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll No.</span>
+            <input type="text" placeholder="Enter your Roll No." name="roll1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email1" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" name="phone1" required>
+          </div>
+          
+        </div>
+        <hr>
+
+
+
+        <span class="heading">Team Member 1</span>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name2" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll No.</span>
+            <input type="text" placeholder="Enter your Roll No." name="roll2" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email2" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" name="phone2" required>
+          </div>
+          
+        </div>
+<hr>
+
+        <span class="heading">Team Member 2</span>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name3" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll No.</span>
+            <input type="text" placeholder="Enter your Roll No." name="roll3" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email3" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" name="phone3" required>
+          </div>
+          
+        </div>
+        <hr>
+
+
+
+        <span class="heading">Team Member 3</span>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" name="name4" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Roll No.</span>
+            <input type="text" placeholder="Enter your Roll No." name="roll4" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email4" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your phone number" name="phone4" required>
+          </div>
+          
+        </div>
+        <hr>
+
+        
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+ 
+    
+{% endblock %}
+
